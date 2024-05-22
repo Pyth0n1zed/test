@@ -31,31 +31,32 @@
             border:none;
             background-color: white;
             display: flex;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 14px rgba(0,0,0,0.2);
             width: 125px;
             border-radius: 5px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .button2:hover {
             transform: scale(1.05);
-            box-shadow: rgba(0,0,0,0.15);
+            box-shadow: rgba(0,0,0,0.3);
         }
     </style>
     <header>
         <h2>Button testing</h2>
     </header>
     <main>
-        <button id="basicButton">This is a basic button</button>
+        <button id="basicButton" onclick="document.getElementById('tp').innerHTML='Basic button has been pressed.'">This is a basic button</button>
         <br>
         <br>
-        <button class="button">This button is better</button>
+        <button class="button" onclick="document.getElementById('tp').innerHTML='Button1 has been pressed.'">This button is better</button>
         <br>
         <br>
-        <button class="button1">This button is even better</button>
+        <button class="button1" onclick="document.getElementById('tp').innerHTML='Button2 has been pressed.'">This button is even better</button>
         <br>
         <br>
-        <div class="button2">
+        <div class="button2" onclick="document.getElementById('tp').innerHTML='Button3 has been pressed.'">
             <p>This is the greatest button to exist</p>
         </div>
+        <p id="tp">A button has not been clicked yet.
     </main>
 </html>
