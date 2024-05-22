@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: black;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+        }
+        div {
+            border: 1px solid rgb(8, 206, 8);
+            margin-top: -15px;
+        }
+        p {
+            color: gainsboro;
+            text-align: center;
+        }
+        button {
+            border: none;
+            background-color: rgb(43, 123, 216);
+            display: inline-block;
+            font-size: 32px;
+            border-radius: 12px;
+        }
+    </style>
+    <header>
+        <h2 id = "head">Welcome to example button test!</h2>
+    </header>
+    <body>
+        <br>
+        <div id="testDiv">
+
+            <h2><button id = b1 onmousedown="document.getElementById('e1').innerHTML='Button1 is being held down.'; document.getElementById('b1').style.backgroundColor='blue';" onmouseup="document.getElementById('e1').innerHTML='A button is not being held down.'; document.getElementById('b1').style.backgroundColor='#2b7bd8';">Button1</button>
+            <p id="e1">A button is not being held down.</p>
+        </div>
+    </body>
+</html>
+<!--padding: 8px;-->
+<!--<h2><button id="b2" onclick="document.getElementById('e1').innerHTML = 'button2 has been clicked'">Button2</button></h2>-->

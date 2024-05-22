@@ -8,6 +8,7 @@
         h2 {text-align: center;}
         button {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(10, 20, 41);}
         .centerbtn {align-content: center; justify-content: center; display: flex;}
+        .show {align-content: center; justify-content: center; display: flex;}
     </style>
     <body>
         <header>
@@ -15,7 +16,7 @@
         </header>
         <main>
             <div class = "centerbtn">
-                <button id="show" onclick="document.getElementById('pic').style.opacity = '1'">Click me to show a picture!</button>
+                <button id="show" onclick="document.getElementById('pic').style.opacity = '1'; document.getElementById('show').style.opacity = 0; document.getElementById('hide').style.opacity = 1">Click me to show a picture!</button>
             </div>
             <h2><img id="pic" src="th.jpg" width="170" height="100"></h2>
         </main>
