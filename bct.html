@@ -30,8 +30,8 @@
     <body>
         <br>
         <div id="testDiv">
-
-            <h2><button id = b1 onmousedown="document.getElementById('e1').innerHTML='Button1 is being held down.'; document.getElementById('b1').style.backgroundColor='blue';" onmouseup="document.getElementById('e1').innerHTML='A button is not being held down.'; document.getElementById('b1').style.backgroundColor='#2b7bd8';">Button1</button>
+            <audio id = "asfx" src="amogus sound effect.mp3"></audio>
+            <h2><button id = b1 onmousedown="document.getElementById('e1').innerHTML='Button1 is being held down.'; document.getElementById('b1').style.backgroundColor='blue';document.getElementById('b1').style.backgroundColor='#2b7bd8'; document.getElementById('asfx').play()" onmouseup="document.getElementById('e1').innerHTML='A button is not being held down.';">Click to make sound</button>
             <p id="e1">A button is not being held down.</p>
         </div>
     </body>
