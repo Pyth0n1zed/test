@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        header {font-family: Arial, Helvetica, sans-serif; text-align: center; color: rgb(143, 45, 224);}
+        body {background-color: rgb(0, 21, 53);}
+        h2 {text-align: center;}
+        label {color: rgb(255, 255, 255); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        li {color: rgb(137, 189, 235);}
+        .listDiv {border: 3px solid aqua;}
+    </style>
+    <header>
+        <h2>To-do list:</h2>
+    </header>
+    <body>
+        <h2><label for="inp">Enter item here:</label></h2>
+        <h2><input id="inp" placeholder="Enter item here"></input></h2>
+        <h2><button id="btn1" onclick="l1.innerHTML=textbox.value">Add to task 1</button></h2>
+        <h2><button id="btn2" onclick="l2.innerHTML=textbox.value">Add to task 2</button></h2>
+        <h2><button id="btn3" onclick="l3.innerHTML=textbox.value">Add to task 3</button></h2>
+        <h2><button id="btn4" onclick="l4.innerHTML=textbox.value">Add to task 4</button></h2>
+        <h2><button id="btn5" onclick="l5.innerHTML=textbox.value">Add to task 5</button></h2>
+        <div id="listDiv">
+            <h2><li id = "li1">N/A</li></h2>
+            <h2><li id = "li2">N/A</li></h2>
+            <h2><li id = "li3">N/A</li></h2>
+            <h2><li id = "li4">N/A</li></h2>
+            <h2><li id = "li5">N/A</li></h2>
+        </div>
+    </body>
+    <script>
+        const button = document.getElementById('btn')
+        const textbox = document.getElementById('inp')
+        const l1 = document.getElementById("li1")
+        const l2 = document.getElementById("li2")
+        const l3 = document.getElementById("li3")
+        const l4 = document.getElementById("li4")
+        const l5 = document.getElementById("li5")
+    </script>
+</html>
